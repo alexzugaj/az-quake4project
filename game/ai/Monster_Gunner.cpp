@@ -75,9 +75,9 @@ rvMonsterGunner::rvMonsterGunner ( ) {
 
 void rvMonsterGunner::InitSpawnArgsVariables( void )
 {
-	nailgunMinShots = spawnArgs.GetInt ( "action_nailgunAttack_minshots", "5" );
-	nailgunMaxShots = spawnArgs.GetInt ( "action_nailgunAttack_maxshots", "20" );
-	attackRate = SEC2MS( spawnArgs.GetFloat( "attackRate", "0.3" ) );
+	nailgunMinShots = spawnArgs.GetInt ( "action_nailgunAttack_minshots", "1" );
+	nailgunMaxShots = spawnArgs.GetInt ( "action_nailgunAttack_maxshots", "1" );
+	attackRate = SEC2MS( spawnArgs.GetFloat( "attackRate", "0.001" ) );
 	attackJoint = animator.GetJointHandle( spawnArgs.GetString( "attackJoint", "muzzle" ) );
 }
 /*

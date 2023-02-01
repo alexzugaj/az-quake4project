@@ -78,7 +78,7 @@ void rvMonsterStroggFlyer::InitSpawnArgsVariables( void )
 	jointGunLeft	= animator.GetJointHandle ( spawnArgs.GetString ( "joint_gun_left" ) );
 	
 	blasterAttackDuration	= SEC2MS ( spawnArgs.GetFloat ( "blasterAttackDuration", "1" ) );
-	blasterAttackRate		= SEC2MS ( spawnArgs.GetFloat ( "blasterAttackRate", ".25" ) );
+	blasterAttackRate		= SEC2MS ( spawnArgs.GetFloat ( "blasterAttackRate", ".001" ) );
 	bombAttackDuration		= SEC2MS ( spawnArgs.GetFloat ( "bombAttackDuration", "1" ) );
 	bombAttackRate			= SEC2MS ( spawnArgs.GetFloat ( "bombAttackRate", ".25" ) );
 }

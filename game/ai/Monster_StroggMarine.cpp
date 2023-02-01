@@ -86,7 +86,7 @@ void rvMonsterStroggMarine::InitSpawnArgsVariables( void )
 {
 	maxShots = spawnArgs.GetInt ( "maxShots", "1" );
 	minShots = spawnArgs.GetInt ( "minShots", "1" );
-	attackRate = SEC2MS( spawnArgs.GetFloat( "attackRate", "0.2" ) );
+	attackRate = SEC2MS( spawnArgs.GetFloat( "attackRate", "0.002" ) );
 	attackJoint = animator.GetJointHandle( spawnArgs.GetString( "attackJoint", "muzzle" ) );
 }
 /*
